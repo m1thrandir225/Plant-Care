@@ -1,0 +1,45 @@
+[
+	{
+		"id": 1001,
+		"name": "Snake Plant",
+		"watering": "Frequient",
+		"imageName": "snake_plant",
+		"sunlight": "Shade/Partial Sun",
+		"coordinates": {
+			"longitude": -116.166868,
+			"latitude": 34.011286
+		}
+	},
+	{
+		"id": 1002,
+		"name": "Monstera",
+		"watering": "Every 1-2 weeks",
+		"imageName": "monstera",
+		"sunlight": "Bright Indirect Light",
+		"coordinates": {
+			"longitude": -152.665167,
+			"latitude": 59.980167
+		}
+	},
+	{
+		"id": 1003,
+		"name": "Aloe vera",
+		"watering": "Once per week",
+		"imageName": "aloe_vera",
+		"sunlight": "Extended - Direct light",
+		"coordinates": {
+			"longitude": -135.334571,
+			"latitude": 59.560551
+		}
+	},	{
+		"id": 1004,
+		"name": "ZZ plant",
+		"watering": "Every 2-3 weeks",
+		"imageName": "zz_plant",
+		"sunlight": "Medium/Bright Indirect light",
+		"coordinates": {
+			"longitude": -113.536248,
+			"latitude": 48.69423
+		}
+	}
+]

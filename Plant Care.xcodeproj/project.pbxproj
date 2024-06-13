@@ -11,6 +11,14 @@
 		0E48529C2C1A13CC00FB577E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48529B2C1A13CC00FB577E /* ContentView.swift */; };
 		0E48529E2C1A13CD00FB577E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E48529D2C1A13CD00FB577E /* Assets.xcassets */; };
 		0E4852A12C1A13CD00FB577E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4852A02C1A13CD00FB577E /* Preview Assets.xcassets */; };
+		0EEB1C7F2C1AE4D800AA90FE /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C7E2C1AE4D800AA90FE /* Plant.swift */; };
+		0EEB1C832C1AE9C200AA90FE /* plantData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EEB1C822C1AE9C200AA90FE /* plantData.json */; };
+		0EEB1C852C1AEC7200AA90FE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C842C1AEC7200AA90FE /* ModelData.swift */; };
+		0EEB1C872C1AED4D00AA90FE /* PlantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C862C1AED4D00AA90FE /* PlantRow.swift */; };
+		0EEB1C892C1AEEC400AA90FE /* PlantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C882C1AEEC400AA90FE /* PlantList.swift */; };
+		0EEB1C8B2C1AEFEE00AA90FE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C8A2C1AEFEE00AA90FE /* MapView.swift */; };
+		0EEB1C8D2C1AF05900AA90FE /* ImageCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C8C2C1AF05900AA90FE /* ImageCircle.swift */; };
+		0EEB1C8F2C1AF0A700AA90FE /* PlantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C8E2C1AF0A700AA90FE /* PlantDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		0E48529B2C1A13CC00FB577E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E48529D2C1A13CD00FB577E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4852A02C1A13CD00FB577E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0EEB1C7E2C1AE4D800AA90FE /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		0EEB1C822C1AE9C200AA90FE /* plantData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = plantData.json; sourceTree = "<group>"; };
+		0EEB1C842C1AEC7200AA90FE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		0EEB1C862C1AED4D00AA90FE /* PlantRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRow.swift; sourceTree = "<group>"; };
+		0EEB1C882C1AEEC400AA90FE /* PlantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantList.swift; sourceTree = "<group>"; };
+		0EEB1C8A2C1AEFEE00AA90FE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0EEB1C8C2C1AF05900AA90FE /* ImageCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCircle.swift; sourceTree = "<group>"; };
+		0EEB1C8E2C1AF0A700AA90FE /* PlantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,10 @@
 		0E4852982C1A13CC00FB577E /* Plant Care */ = {
 			isa = PBXGroup;
 			children = (
+				0EEB1C812C1AE8A900AA90FE /* Resources */,
+				0EEB1C802C1AE7DC00AA90FE /* Views */,
+				0EEB1C7D2C1AE4C600AA90FE /* Models */,
 				0E4852992C1A13CC00FB577E /* Plant_CareApp.swift */,
-				0E48529B2C1A13CC00FB577E /* ContentView.swift */,
 				0E48529D2C1A13CD00FB577E /* Assets.xcassets */,
 				0E48529F2C1A13CD00FB577E /* Preview Content */,
 			);
@@ -65,6 +83,36 @@
 				0E4852A02C1A13CD00FB577E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0EEB1C7D2C1AE4C600AA90FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0EEB1C7E2C1AE4D800AA90FE /* Plant.swift */,
+				0EEB1C842C1AEC7200AA90FE /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0EEB1C802C1AE7DC00AA90FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E48529B2C1A13CC00FB577E /* ContentView.swift */,
+				0EEB1C862C1AED4D00AA90FE /* PlantRow.swift */,
+				0EEB1C882C1AEEC400AA90FE /* PlantList.swift */,
+				0EEB1C8A2C1AEFEE00AA90FE /* MapView.swift */,
+				0EEB1C8C2C1AF05900AA90FE /* ImageCircle.swift */,
+				0EEB1C8E2C1AF0A700AA90FE /* PlantDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0EEB1C812C1AE8A900AA90FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EEB1C822C1AE9C200AA90FE /* plantData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EEB1C832C1AE9C200AA90FE /* plantData.json in Resources */,
 				0E4852A12C1A13CD00FB577E /* Preview Assets.xcassets in Resources */,
 				0E48529E2C1A13CD00FB577E /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EEB1C8B2C1AEFEE00AA90FE /* MapView.swift in Sources */,
+				0EEB1C8D2C1AF05900AA90FE /* ImageCircle.swift in Sources */,
 				0E48529C2C1A13CC00FB577E /* ContentView.swift in Sources */,
+				0EEB1C892C1AEEC400AA90FE /* PlantList.swift in Sources */,
+				0EEB1C852C1AEC7200AA90FE /* ModelData.swift in Sources */,
+				0EEB1C7F2C1AE4D800AA90FE /* Plant.swift in Sources */,
+				0EEB1C8F2C1AF0A700AA90FE /* PlantDetail.swift in Sources */,
+				0EEB1C872C1AED4D00AA90FE /* PlantRow.swift in Sources */,
 				0E48529A2C1A13CC00FB577E /* Plant_CareApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
