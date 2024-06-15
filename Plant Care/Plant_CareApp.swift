@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Plant_CareApp: App {
+	var plantManager = PlantManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.environmentObject(plantManager)
         }
     }
 }

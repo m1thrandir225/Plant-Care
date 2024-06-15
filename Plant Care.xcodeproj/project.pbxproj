@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E108F4C2C1DCE1F002EF436 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E108F4B2C1DCE1F002EF436 /* Alamofire */; };
+		0E108F4F2C1DD131002EF436 /* PlantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E108F4E2C1DD131002EF436 /* PlantManager.swift */; };
 		0E48529A2C1A13CC00FB577E /* Plant_CareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4852992C1A13CC00FB577E /* Plant_CareApp.swift */; };
 		0E48529C2C1A13CC00FB577E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48529B2C1A13CC00FB577E /* ContentView.swift */; };
 		0E48529E2C1A13CD00FB577E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E48529D2C1A13CD00FB577E /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E108F4E2C1DD131002EF436 /* PlantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManager.swift; sourceTree = "<group>"; };
+		0E108F542C1DD8D1002EF436 /* Plant-Care-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Plant-Care-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0E4852962C1A13CC00FB577E /* Plant Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plant Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4852992C1A13CC00FB577E /* Plant_CareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant_CareApp.swift; sourceTree = "<group>"; };
 		0E48529B2C1A13CC00FB577E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,12 +46,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E108F4C2C1DCE1F002EF436 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E108F4D2C1DD121002EF436 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0E108F4E2C1DD131002EF436 /* PlantManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		0E48528D2C1A13CC00FB577E = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +80,8 @@
 		0E4852982C1A13CC00FB577E /* Plant Care */ = {
 			isa = PBXGroup;
 			children = (
+				0E108F542C1DD8D1002EF436 /* Plant-Care-Info.plist */,
+				0E108F4D2C1DD121002EF436 /* Manager */,
 				0EEB1C812C1AE8A900AA90FE /* Resources */,
 				0EEB1C802C1AE7DC00AA90FE /* Views */,
 				0EEB1C7D2C1AE4C600AA90FE /* Models */,
@@ -131,6 +146,9 @@
 			dependencies = (
 			);
 			name = "Plant Care";
+			packageProductDependencies = (
+				0E108F4B2C1DCE1F002EF436 /* Alamofire */,
+			);
 			productName = "Plant Care";
 			productReference = 0E4852962C1A13CC00FB577E /* Plant Care.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +177,9 @@
 				Base,
 			);
 			mainGroup = 0E48528D2C1A13CC00FB577E;
+			packageReferences = (
+				0E108F4A2C1DCE1F002EF436 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0E4852972C1A13CC00FB577E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,6 +214,7 @@
 				0EEB1C852C1AEC7200AA90FE /* ModelData.swift in Sources */,
 				0EEB1C7F2C1AE4D800AA90FE /* Plant.swift in Sources */,
 				0EEB1C8F2C1AF0A700AA90FE /* PlantDetail.swift in Sources */,
+				0E108F4F2C1DD131002EF436 /* PlantManager.swift in Sources */,
 				0EEB1C872C1AED4D00AA90FE /* PlantRow.swift in Sources */,
 				0E48529A2C1A13CC00FB577E /* Plant_CareApp.swift in Sources */,
 			);
@@ -330,6 +352,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Plant Care/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Plant-Care-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -358,6 +381,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Plant Care/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Plant-Care-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -398,6 +422,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E108F4A2C1DCE1F002EF436 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E108F4B2C1DCE1F002EF436 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E108F4A2C1DCE1F002EF436 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E48528E2C1A13CC00FB577E /* Project object */;
 }

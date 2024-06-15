@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-		PlantList()
+		TabView {
+			PlantList()
+				.tabItem {
+					Image(systemName: "tree")
+					Text("Plants")
+				}
+		}
     }
 }
 

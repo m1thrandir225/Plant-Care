@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct PlantList: View {
+	@EnvironmentObject var plantManager: PlantManager;
+	
     var body: some View {
 		NavigationSplitView {
-			List (plants) { plant in
-				NavigationLink {
-					PlantDetail(plant: plant)
-				} label: {
-					PlantRow(plant: plant)
+			List {
+				if(plantManager.plants.count == 0) {
+					HStack {
+						Text("Couldn't fetch data")
+					}
+				} else {
+					ForEach(plantManager.plants) { plant in
+						NavigationLink {
+							PlantDetail(plant: plant)
+						} label: {
+							PlantRow(plant: plant)
+						}
+					}
 				}
 			}
 			.navigationTitle("Plants")

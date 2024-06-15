@@ -13,33 +13,30 @@ struct PlantDetail: View {
 	
     var body: some View {
 		ScrollView {
-			MapView(coordinate: plant.locationCoordinate)
-				.frame(height: 300)
-			
-			ImageCircle(image: plant.image)
+			ImageCircle(imageUrl: plant.imageUrl)
 				.offset(y: -130)
 				.padding(.bottom, -130)
 			
 			VStack(alignment: .leading) {
-				Text (plant.name)
+				Text (plant.commonName)
 					.font(.title)
 				
 				HStack {
-					Text("Sunlight \(plant.sunlight)")
+					Text("Family: \(plant.family)")
 					Spacer()
-					Text("Watering \(plant.watering)")
+					Text("Family Common Name: \(plant.familyCommonName)")
 				}
 				.font(.subheadline)
 				.foregroundColor(.secondary)
 				
 				Divider()
 				
-				Text("About \(plant.name)")
+				Text("About \(plant.commonName)")
 					.font(.title2)
-				Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+				Text(plant.bibliography)
 			}.padding()
 		}
-		.navigationTitle(plant.name)
+		.navigationTitle(plant.commonName)
 		.navigationBarTitleDisplayMode(.inline)
     }
 }

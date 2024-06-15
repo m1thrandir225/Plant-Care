@@ -11,10 +11,11 @@ struct PlantRow: View {
 	var plant: Plant
     var body: some View {
 		HStack {
-			plant.image
-				.resizable()
-				.frame(width: 50, height: 50)
-			Text(plant.name)
+			AsyncImage(url: URL(string: plant.imageUrl)) { image in
+				image.image?.resizable()
+			}.frame(width: 50, height: 50)
+			
+			Text(plant.commonName)
 			Spacer()
 		}
     }
