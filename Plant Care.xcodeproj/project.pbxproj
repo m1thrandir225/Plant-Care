@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E04E6842C1EE6F30075516F /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04E6832C1EE6F30075516F /* ModelData.swift */; };
+		0E04E6862C1EED490075516F /* UserPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04E6852C1EED490075516F /* UserPlant.swift */; };
+		0E04E6882C1EEF460075516F /* UserPlantsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04E6872C1EEF460075516F /* UserPlantsList.swift */; };
+		0E04E68A2C1EF7C30075516F /* AddPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04E6892C1EF7C30075516F /* AddPlant.swift */; };
 		0E108F4C2C1DCE1F002EF436 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E108F4B2C1DCE1F002EF436 /* Alamofire */; };
 		0E108F4F2C1DD131002EF436 /* PlantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E108F4E2C1DD131002EF436 /* PlantManager.swift */; };
 		0E48529A2C1A13CC00FB577E /* Plant_CareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4852992C1A13CC00FB577E /* Plant_CareApp.swift */; };
 		0E48529C2C1A13CC00FB577E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48529B2C1A13CC00FB577E /* ContentView.swift */; };
 		0E48529E2C1A13CD00FB577E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E48529D2C1A13CD00FB577E /* Assets.xcassets */; };
 		0E4852A12C1A13CD00FB577E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4852A02C1A13CD00FB577E /* Preview Assets.xcassets */; };
+		0E74E99F2C202EF300B1306F /* ImagePickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74E99E2C202EF300B1306F /* ImagePickerCoordinator.swift */; };
+		0E74E9A12C20321E00B1306F /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74E9A02C20321E00B1306F /* ImagePickerView.swift */; };
+		0E74E9A62C20997800B1306F /* UserPlantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74E9A52C20997800B1306F /* UserPlantRow.swift */; };
 		0EEB1C7F2C1AE4D800AA90FE /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C7E2C1AE4D800AA90FE /* Plant.swift */; };
 		0EEB1C832C1AE9C200AA90FE /* plantData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EEB1C822C1AE9C200AA90FE /* plantData.json */; };
-		0EEB1C852C1AEC7200AA90FE /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C842C1AEC7200AA90FE /* ModelData.swift */; };
 		0EEB1C872C1AED4D00AA90FE /* PlantRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C862C1AED4D00AA90FE /* PlantRow.swift */; };
 		0EEB1C892C1AEEC400AA90FE /* PlantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C882C1AEEC400AA90FE /* PlantList.swift */; };
 		0EEB1C8B2C1AEFEE00AA90FE /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEB1C8A2C1AEFEE00AA90FE /* MapView.swift */; };
@@ -24,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E04E6832C1EE6F30075516F /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		0E04E6852C1EED490075516F /* UserPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlant.swift; sourceTree = "<group>"; };
+		0E04E6872C1EEF460075516F /* UserPlantsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlantsList.swift; sourceTree = "<group>"; };
+		0E04E6892C1EF7C30075516F /* AddPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlant.swift; sourceTree = "<group>"; };
 		0E108F4E2C1DD131002EF436 /* PlantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantManager.swift; sourceTree = "<group>"; };
 		0E108F542C1DD8D1002EF436 /* Plant-Care-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Plant-Care-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0E4852962C1A13CC00FB577E /* Plant Care.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plant Care.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,9 +41,11 @@
 		0E48529B2C1A13CC00FB577E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E48529D2C1A13CD00FB577E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4852A02C1A13CD00FB577E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E74E99E2C202EF300B1306F /* ImagePickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerCoordinator.swift; sourceTree = "<group>"; };
+		0E74E9A02C20321E00B1306F /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		0E74E9A52C20997800B1306F /* UserPlantRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlantRow.swift; sourceTree = "<group>"; };
 		0EEB1C7E2C1AE4D800AA90FE /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		0EEB1C822C1AE9C200AA90FE /* plantData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = plantData.json; sourceTree = "<group>"; };
-		0EEB1C842C1AEC7200AA90FE /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		0EEB1C862C1AED4D00AA90FE /* PlantRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRow.swift; sourceTree = "<group>"; };
 		0EEB1C882C1AEEC400AA90FE /* PlantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantList.swift; sourceTree = "<group>"; };
 		0EEB1C8A2C1AEFEE00AA90FE /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -57,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				0E108F4E2C1DD131002EF436 /* PlantManager.swift */,
+				0E74E99E2C202EF300B1306F /* ImagePickerCoordinator.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -104,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				0EEB1C7E2C1AE4D800AA90FE /* Plant.swift */,
-				0EEB1C842C1AEC7200AA90FE /* ModelData.swift */,
+				0E04E6852C1EED490075516F /* UserPlant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -112,12 +125,16 @@
 		0EEB1C802C1AE7DC00AA90FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0E04E6892C1EF7C30075516F /* AddPlant.swift */,
 				0E48529B2C1A13CC00FB577E /* ContentView.swift */,
 				0EEB1C862C1AED4D00AA90FE /* PlantRow.swift */,
 				0EEB1C882C1AEEC400AA90FE /* PlantList.swift */,
 				0EEB1C8A2C1AEFEE00AA90FE /* MapView.swift */,
 				0EEB1C8C2C1AF05900AA90FE /* ImageCircle.swift */,
 				0EEB1C8E2C1AF0A700AA90FE /* PlantDetail.swift */,
+				0E04E6872C1EEF460075516F /* UserPlantsList.swift */,
+				0E74E9A02C20321E00B1306F /* ImagePickerView.swift */,
+				0E74E9A52C20997800B1306F /* UserPlantRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				0EEB1C822C1AE9C200AA90FE /* plantData.json */,
+				0E04E6832C1EE6F30075516F /* ModelData.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -208,13 +226,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EEB1C8B2C1AEFEE00AA90FE /* MapView.swift in Sources */,
+				0E74E99F2C202EF300B1306F /* ImagePickerCoordinator.swift in Sources */,
 				0EEB1C8D2C1AF05900AA90FE /* ImageCircle.swift in Sources */,
+				0E74E9A62C20997800B1306F /* UserPlantRow.swift in Sources */,
 				0E48529C2C1A13CC00FB577E /* ContentView.swift in Sources */,
+				0E74E9A12C20321E00B1306F /* ImagePickerView.swift in Sources */,
 				0EEB1C892C1AEEC400AA90FE /* PlantList.swift in Sources */,
-				0EEB1C852C1AEC7200AA90FE /* ModelData.swift in Sources */,
+				0E04E6882C1EEF460075516F /* UserPlantsList.swift in Sources */,
 				0EEB1C7F2C1AE4D800AA90FE /* Plant.swift in Sources */,
+				0E04E68A2C1EF7C30075516F /* AddPlant.swift in Sources */,
 				0EEB1C8F2C1AF0A700AA90FE /* PlantDetail.swift in Sources */,
+				0E04E6862C1EED490075516F /* UserPlant.swift in Sources */,
 				0E108F4F2C1DD131002EF436 /* PlantManager.swift in Sources */,
+				0E04E6842C1EE6F30075516F /* ModelData.swift in Sources */,
 				0EEB1C872C1AED4D00AA90FE /* PlantRow.swift in Sources */,
 				0E48529A2C1A13CC00FB577E /* Plant_CareApp.swift in Sources */,
 			);
@@ -353,6 +377,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Plant-Care-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for taking pictures";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used for selecting photos from library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -382,6 +408,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Plant-Care-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for taking pictures";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used for selecting photos from library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

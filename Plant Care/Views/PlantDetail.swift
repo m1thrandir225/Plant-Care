@@ -13,18 +13,51 @@ struct PlantDetail: View {
 	
     var body: some View {
 		ScrollView {
-			ImageCircle(imageUrl: plant.imageUrl)
-				.offset(y: -130)
-				.padding(.bottom, -130)
-			
+			AsyncImage(url: URL(string: plant.imageUrl)) { phase in
+				
+				switch phase {
+				case .empty:
+					ProgressView()
+				case .success(let image):
+					image
+						.resizable()
+						.aspectRatio(contentMode: .fill)
+						.frame(maxHeight: 300)
+						.clipped()
+				case .failure:
+					Image(systemName: "wifi.slash")
+
+				@unknown default:
+					EmptyView()
+				}
+			}
+			.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 300)
+		
 			VStack(alignment: .leading) {
+				
 				Text (plant.commonName)
 					.font(.title)
 				
 				HStack {
-					Text("Family: \(plant.family)")
+					if let family = plant.family {
+						Text("Family: \(family)")
+					}
 					Spacer()
-					Text("Family Common Name: \(plant.familyCommonName)")
+					if let familyCommonName = plant.familyCommonName {
+						Text("Common Name: \(familyCommonName)")
+					}
+				}
+				.font(.subheadline)
+				.foregroundColor(.secondary)
+				
+				HStack {
+					if let isVegetable = plant.vegetable {
+						Text("Is a vegetable: \(isVegetable)")
+					}
+					Spacer()
+					if let isEdible = plant.edible {
+						Text("Is edible: \(isEdible)")
+					}
 				}
 				.font(.subheadline)
 				.foregroundColor(.secondary)
@@ -36,6 +69,7 @@ struct PlantDetail: View {
 				Text(plant.bibliography)
 			}.padding()
 		}
+		.toolbar(.hidden, for: .tabBar)
 		.navigationTitle(plant.commonName)
 		.navigationBarTitleDisplayMode(.inline)
     }

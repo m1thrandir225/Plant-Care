@@ -15,6 +15,11 @@ struct ContentView: View {
 					Image(systemName: "tree")
 					Text("Plants")
 				}
+			UserPlantsList()
+				.tabItem {
+					Image(systemName: "leaf")
+					Text("Your Plants")
+				}
 		}
     }
 }

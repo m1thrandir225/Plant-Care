@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct Plant_CareApp: App {
@@ -13,6 +14,9 @@ struct Plant_CareApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.modelContainer(for: [
+					UserPlant.self
+				])
 				.environmentObject(plantManager)
         }
     }
