@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+extension AnyTransition {
+	static var moveAndFade: AnyTransition {
+		.asymmetric(
+			insertion: .move(edge: .trailing).combined(with: .opacity),
+			removal: .scale.combined(with: .opacity)
+		)
+	}
+}
+
 struct UserPlantDetail: View {
 	var plant: UserPlant
 	
@@ -22,6 +31,7 @@ struct UserPlantDetail: View {
 			VStack(alignment: .leading, content: {
 				Text(plant.name)
 					.font(.title)
+					.transition(.moveAndFade)
 				
 				HStack {
 					Text("Watering: \(plant.wateringFrequency)")
@@ -30,7 +40,6 @@ struct UserPlantDetail: View {
 				}
 				.font(.subheadline)
 				.foregroundColor(.secondary)
-				
 				Divider()
 				
 			}).padding()

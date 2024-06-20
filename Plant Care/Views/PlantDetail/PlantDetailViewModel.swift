@@ -22,7 +22,7 @@ final class PlantDetailViewModel: ObservableObject {
 	
 	func getPlant() {
 		isLoading = true
-		let  url = "https://perenual.com/api/species/details/\(plantId)?key=sk-zkpH6672b92769e355912"
+		let  url = "https://perenual.com/api/species/details/\(plantId)?key=sk-kaor66745f9933b215998"
 		AF.request(url)
 			.responseDecodable(of: DetailedPlant.self) { response in
 				self.isLoading = false

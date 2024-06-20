@@ -48,10 +48,8 @@ struct PlantDetail: View {
 			
 			
 				VStack(alignment: .leading) {
-					
 					Text (viewModel.plant?.commonName.capitalized ?? "")
 						.font(.title)
-					
 					VStack(alignment: .leading) {
 						if let watering = viewModel.plant?.watering {
 							Text("Watering Frequency: \(watering)")
@@ -101,14 +99,16 @@ struct PlantDetail: View {
 							Text("Edible leaf: \(edibleLeaf)")
 						}
 					}.font(.subheadline)
-						.foregroundColor(.secondary)
+					.foregroundColor(.secondary)
+					.transition(.scale)
 					
 					Divider()
 					
 					Text("About \(viewModel.plant?.commonName ?? "")")
 						.font(.title2)
 						.padding(.bottom)
-					Text(viewModel.plant?.description  ?? "")
+					
+					Text(viewModel.plant?.description  ?? "").transition(.opacity)
 					
 					Group {
 						Text("Plant Locations:").font(.title2)
@@ -126,6 +126,7 @@ struct PlantDetail: View {
 							Text ("No origin locations.")
 						}
 					}.padding()
+						.transition(.slide)
 
 				}.padding()
 			}

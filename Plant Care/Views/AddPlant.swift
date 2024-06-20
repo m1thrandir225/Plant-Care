@@ -92,15 +92,29 @@ struct AddPlant: View {
 					.scaledToFill()
 					.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 200).frame(height: 200)
 				
-			} else {
-				Button(action: { showImagePicker = true}, label: {
-					VStack {
-						Image(systemName: "photo")
-						Text("Select an image")
-					}
-				}).frame(maxWidth: .infinity, maxHeight: 200).frame(height: 200)
 			}
 			
+			NavigationLink {
+				ImagePickerView(selectedImage: $image)
+			} label: {
+				Button(action: {}, label: {
+					HStack {
+						Image(systemName: "photo.stack")
+						Text("Select an image").font(.caption2)
+					}
+				})
+			}
+			NavigationLink {
+				CameraView(selectedImage: $image)
+			} label: {
+				Button(action: { }, label: {
+					HStack {
+						Image(systemName: "camera")
+						Text("Take a picture").font(.caption2)
+					}
+				})
+			
+			}
 			Button("Add Plant") {
 				UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
 					if success {

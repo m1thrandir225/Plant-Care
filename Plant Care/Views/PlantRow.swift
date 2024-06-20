@@ -12,7 +12,7 @@ struct PlantRow: View {
     var body: some View {
 		HStack {
 			if let image = plant.defaultImage?.thumbnail {
-				AsyncImage(url: URL(string: image)) { phase in
+				AsyncImage(url: URL(string: image), transaction: Transaction(animation: .spring)) { phase in
 					switch phase {
 					case .empty:
 						ProgressView()
@@ -33,7 +33,7 @@ struct PlantRow: View {
 			} else {
 				EmptyView()
 			}
-			Text(plant.scientificName?[0] ?? plant.commonName ?? "")
+			Text(plant.scientificName?[0] ?? plant.commonName ?? "").transition(.scale)
 			Spacer()
 		}
     }
