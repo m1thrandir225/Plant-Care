@@ -8,28 +8,32 @@
 import SwiftUI
 
 struct PlantRow: View {
-	var plant: Plant
+	var plant: PlantListItem
     var body: some View {
 		HStack {
-			AsyncImage(url: URL(string: plant.imageUrl)) { phase in
-				switch phase {
-				case .empty:
-					ProgressView()
-				case .success(let image):
-					image
-						.resizable()
-						.aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-						.frame(width: 50, height: 50)
-						.clipped()
-				case .failure:
-					Image(systemName: "wifi.slash")
-				@unknown default:
-					EmptyView()
-					
-				}
-			}.frame(width: 50, height: 50)
-			
-			Text(plant.commonName)
+			if let image = plant.defaultImage?.thumbnail {
+				AsyncImage(url: URL(string: image)) { phase in
+					switch phase {
+					case .empty:
+						ProgressView()
+					case .success(let image):
+						image
+							.resizable()
+							.aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+							.frame(width: 50, height: 50)
+							.clipped()
+							.transition(.slide)
+					case .failure:
+						Image(systemName: "wifi.slash")
+					@unknown default:
+						EmptyView()
+						
+					}
+				}.frame(width: 50, height: 50)
+			} else {
+				EmptyView()
+			}
+			Text(plant.scientificName?[0] ?? plant.commonName ?? "")
 			Spacer()
 		}
     }

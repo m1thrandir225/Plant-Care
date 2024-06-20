@@ -20,13 +20,14 @@ struct PlantList: View {
 				} else {
 					ForEach(plantManager.plants) { plant in
 						NavigationLink {
-							PlantDetail(plant: plant)
+							PlantDetail(plantApi: String(plant.id))
 						} label: {
-							PlantRow(plant: plant)
+							PlantRow(plant: plant).transition(.scale)
 						}
 					}
 				}
 			}
+			.transition(.scale)
 			.navigationTitle("Plants")
 		} detail: {
 			Text("Select a landmark")

@@ -1,260 +1,234 @@
 [
 	{
-	  "id": 77116,
-	  "common_name": "Evergreen oak",
-	  "slug": "quercus-rotundifolia",
-	  "scientific_name": "Quercus rotundifolia",
-	  "year": 1785,
-	  "bibliography": "Encycl. 1: 723 (1785)",
-	  "author": "Lam.",
-	  "status": "accepted",
-	  "rank": "species",
-	  "family_common_name": null,
-	  "genus_id": 3519,
-	  "image_url": "https://d2seqvvyy3b8p2.cloudfront.net/40ab8e7cdddbe3e78a581b84efa4e893.jpg",
-	  "synonyms": [
-		"Quercus ilex var. oleoides",
-		"Quercus ilex subvar. rotundifolia",
-		"Quercus ilex f. macrophylla",
-		"Quercus ilex f. oleoides",
-		"Quercus ilex var. calicina",
-		"Quercus ilex subsp. rotundifolia",
-		"Quercus lyauteyi",
-		"Quercus ballota var. rotundifolia",
-		"Quercus ilex f. brevicupulata",
-		"Quercus ilex subvar. major",
-		"Quercus ilex var. pendula",
-		"Quercus rotundifolia f. dolichocalyx",
-		"Quercus calicina",
-		"Quercus rotundifolia f. pilosella",
-		"Quercus rotundifolia f. macrocarpa",
-		"Quercus ilex var. rotundifolia",
-		"Quercus sugaro",
-		"Quercus ilex subvar. pendula",
-		"Quercus ilex f. pendula",
-		"Quercus ilex f. ballota",
-		"Quercus ilex f. rotundifolia",
-		"Quercus ilex subvar. minor",
-		"Quercus ballota",
-		"Quercus ilex var. ballota",
-		"Quercus ilex f. calicina",
-		"Quercus ilex var. microcarpa",
-		"Quercus rotundifolia f. calicina",
-		"Quercus ilex f. macrocarpa",
-		"Quercus rotundifolia f. brevicupulata",
-		"Quercus rotundifolia var. macrocarpa",
-		"Quercus ilex var. brevicupulata",
-		"Quercus ilex subsp. ballota",
-		"Quercus ilex var. dolichocalyx",
-		"Quercus rotundifolia var. pilosella",
-		"Quercus rotundifolia var. brevicupulata",
-		"Quercus rotundifolia subsp. maghrebiana"
+	  "id": 425,
+	  "common_name": "flowering-maple",
+	  "scientific_name": [
+		"Abutilon hybridum"
 	  ],
-	  "genus": "Quercus",
-	  "family": "Fagaceae",
-	  "links": {
-		"self": "/api/v1/species/quercus-rotundifolia",
-		"plant": "/api/v1/plants/quercus-rotundifolia",
-		"genus": "/api/v1/genus/quercus"
+	  "other_name": [],
+	  "cycle": "Perennial",
+	  "watering": "Frequent",
+	  "sunlight": [
+		"full sun",
+		"part shade"
+	  ],
+	  "default_image": {
+		"license": 4,
+		"license_name": "Attribution License",
+		"license_url": "https://creativecommons.org/licenses/by/2.0/",
+		"original_url": "https://perenual.com/storage/species_image/425_abutilon_hybridum/og/24527654869_ac712f58c7_b.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/425_abutilon_hybridum/regular/24527654869_ac712f58c7_b.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/425_abutilon_hybridum/medium/24527654869_ac712f58c7_b.jpg",
+		"small_url": "https://perenual.com/storage/species_image/425_abutilon_hybridum/small/24527654869_ac712f58c7_b.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/425_abutilon_hybridum/thumbnail/24527654869_ac712f58c7_b.jpg"
 	  }
 	},
 	{
-	  "id": 109482,
-	  "common_name": "Common nettle",
-	  "slug": "urtica-dioica",
-	  "scientific_name": "Urtica dioica",
-	  "year": 1753,
-	  "bibliography": "Sp. Pl.: 984 (1753)",
-	  "author": "L.",
-	  "status": "accepted",
-	  "rank": "species",
-	  "family_common_name": null,
-	  "genus_id": 5550,
-	  "image_url": "https://bs.plantnet.org/image/o/9db58cbb3538a6b77384f972971d51869228e545",
-	  "synonyms": [
-		"Urtica dioica var. vulgaris",
-		"Urtica dioica var. ramosa",
-		"Urtica dioica subsp. eudioica"
+	  "id": 426,
+	  "common_name": "flowering-maple",
+	  "scientific_name": [
+		"Abutilon hybridum 'Bella Red'"
 	  ],
-	  "genus": "Urtica",
-	  "family": "Urticaceae",
-	  "links": {
-		"self": "/api/v1/species/urtica-dioica",
-		"plant": "/api/v1/plants/urtica-dioica",
-		"genus": "/api/v1/genus/urtica"
+	  "other_name": [],
+	  "cycle": "Perennial",
+	  "watering": "Average",
+	  "sunlight": [
+		"full sun",
+		"part shade"
+	  ],
+	  "default_image": {
+		"license": 451,
+		"license_name": "CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+		"license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+		"original_url": "https://perenual.com/storage/species_image/426_abutilon_hybridum_bella_red/og/abutilon-mallow-flower-red.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/426_abutilon_hybridum_bella_red/regular/abutilon-mallow-flower-red.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/426_abutilon_hybridum_bella_red/medium/abutilon-mallow-flower-red.jpg",
+		"small_url": "https://perenual.com/storage/species_image/426_abutilon_hybridum_bella_red/small/abutilon-mallow-flower-red.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/426_abutilon_hybridum_bella_red/thumbnail/abutilon-mallow-flower-red.jpg"
 	  }
 	},
 	{
-	  "id": 227114,
-	  "common_name": "Barnyard grass",
-	  "slug": "dactylis-glomerata",
-	  "scientific_name": "Dactylis glomerata",
-	  "year": 1753,
-	  "bibliography": "Sp. Pl.: 71 (1753)",
-	  "author": "L.",
-	  "status": "accepted",
-	  "rank": "species",
-	  "family_common_name": null,
-	  "genus_id": 10915,
-	  "image_url": "https://bs.plantnet.org/image/o/f84a7d4fc2e627ccd451f568479b1932c2b2d900",
-	  "synonyms": [
-		"Bromus glomeratus",
-		"Koeleria dactylis",
-		"Festuca glomerata",
-		"Trachypoa vulgaris",
-		"Phalaris glomerata",
-		"Limnetis glomerata"
+	  "id": 427,
+	  "common_name": "flowering-maple",
+	  "scientific_name": [
+		"Abutilon 'Moonchimes'"
 	  ],
-	  "genus": "Dactylis",
-	  "family": "Poaceae",
-	  "links": {
-		"self": "/api/v1/species/dactylis-glomerata",
-		"plant": "/api/v1/plants/dactylis-glomerata",
-		"genus": "/api/v1/genus/dactylis"
+	  "other_name": [],
+	  "cycle": "Perennial",
+	  "watering": "Average",
+	  "sunlight": [
+		"full sun",
+		"part shade"
+	  ],
+	  "default_image": {
+		"license": 45,
+		"license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+		"license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+		"original_url": "https://perenual.com/storage/species_image/427_abutilon_moonchimes/og/Abutilon_x_hybridum_27Moonchimes27_Flower_2800px.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/427_abutilon_moonchimes/regular/Abutilon_x_hybridum_27Moonchimes27_Flower_2800px.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/427_abutilon_moonchimes/medium/Abutilon_x_hybridum_27Moonchimes27_Flower_2800px.jpg",
+		"small_url": "https://perenual.com/storage/species_image/427_abutilon_moonchimes/small/Abutilon_x_hybridum_27Moonchimes27_Flower_2800px.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/427_abutilon_moonchimes/thumbnail/Abutilon_x_hybridum_27Moonchimes27_Flower_2800px.jpg"
 	  }
 	},
 	{
-	  "id": 128860,
-	  "common_name": "Narrow-leaf plantain",
-	  "slug": "plantago-lanceolata",
-	  "scientific_name": "Plantago lanceolata",
-	  "year": 1753,
-	  "bibliography": "Sp. Pl.: 113 (1753)",
-	  "author": "L.",
-	  "status": "accepted",
-	  "rank": "species",
-	  "family_common_name": null,
-	  "genus_id": 6597,
-	  "image_url": "https://bs.plantnet.org/image/o/f8d7d6fe52e36d04f5ad1fc03f46f604d5c3cc43",
-	  "synonyms": [
-		"Plantago intermedia",
-		"Plantago lanceolata var. communis",
-		"Plantago lanceifolia",
-		"Arnoglossum lanceolatum var. ramosum",
-		"Plantago lanceolata f. eriophora",
-		"Plantago lanceolata var. dubia",
-		"Plantago lanceolata f. pleiocephala",
-		"Plantago lanceolata var. eriophylla",
-		"Plantago lanceolata var. mediterranea",
-		"Plantago glareosa",
-		"Plantago pseudopatagonica",
-		"Plantago lanceolata subvar. eriophora",
-		"Plantago dalmatica",
-		"Plantago lanceolata var. bakeri",
-		"Plantago linkii",
-		"Plantago lanceolata var. angustifolia",
-		"Plantago sylvatica",
-		"Plantago orientalis var. lycia",
-		"Plantago lanceolata var. montana",
-		"Plantago lanceolata subsp. eriophora",
-		"Plantago lanceolata f. coarctata",
-		"Plantago nutans",
-		"Plantago lanceolata subvar. lasiophylla",
-		"Plantago lanceolata var. eriophora",
-		"Plantago dubia",
-		"Plantago ambigua",
-		"Plantago eriophora",
-		"Plantago variabilis",
-		"Plantago hungarica",
-		"Plantago yezomaritima",
-		"Plantago lanceolata var. graminifolia",
-		"Plantago elata",
-		"Plantago schottii",
-		"Plantago timbalii",
-		"Plantago lanceolata var. capitellata",
-		"Plantago lanceolata subvar. euryphylla",
-		"Plantago lanceolata f. lanuginosa",
-		"Plantago abyssinica",
-		"Plantago lanceolata subsp. lanuginosa",
-		"Plantago lanceolata var. minima",
-		"Plantago irrigua",
-		"Plantago lanceolata var. latifolia",
-		"Plantago attenuata",
-		"Plantago nigricans",
-		"Arnoglossum lanceolatum var. trinervium",
-		"Plantago lanuginosa",
-		"Plantago lanceolata var. sphaerostachya",
-		"Plantago japonica var. yezomaritima",
-		"Plantago lanceolata subvar. sphaerostachya",
-		"Plantago lanceolata var. contigua",
-		"Plantago leiopetala",
-		"Plantago lanceolata var. timbalii",
-		"Plantago lanceolata f. macrostachya",
-		"Plantago lanceolata var. sylvatica",
-		"Plantago lanceolata subvar. eurhiza",
-		"Plantago preslii",
-		"Lagopus lanceolatus",
-		"Plantago byzantina",
-		"Plantago fontis-curvae",
-		"Plantago media var. prolifera",
-		"Plantago flexuosa",
-		"Plantago lanceolata var. minor",
-		"Plantago lanceolata f. composita",
-		"Plantago lanceolata var. alpina",
-		"Plantago azorica",
-		"Plantago lanceolata var. erecta",
-		"Plantago sphaerostachys",
-		"Plantago kurdica",
-		"Plantago orientalis",
-		"Arnoglossum lanceolatum var. roseum",
-		"Plantago lanceolata var. capitata",
-		"Plantago major f. yezomaritima",
-		"Plantago lanceolata f. bifurca",
-		"Plantago mediterranea",
-		"Plantago lanceolata var. multinervia",
-		"Plantago glauca",
-		"Plantago contorta",
-		"Plantago lanceolata subsp. capitata",
-		"Plantago sphaerostachya",
-		"Plantago lanceolata var. polystachia",
-		"Plantago lanceolata var. maritima",
-		"Lagopus timbali",
-		"Arnoglossum lanceolatum",
-		"Plantago glabriflora",
-		"Plantago longistipes",
-		"Plantago succisa",
-		"Plantago trinervis",
-		"Plantago capitata",
-		"Plantago lanceolata subsp. altissima",
-		"Plantago longiscapa",
-		"Plantago lanceolata var. lanuginosa"
+	  "id": 428,
+	  "common_name": "flowering-maple",
+	  "scientific_name": [
+		"Abutilon pictum 'Gold Dust'"
 	  ],
-	  "genus": "Plantago",
-	  "family": "Plantaginaceae",
-	  "links": {
-		"self": "/api/v1/species/plantago-lanceolata",
-		"plant": "/api/v1/plants/plantago-lanceolata",
-		"genus": "/api/v1/genus/plantago"
+	  "other_name": [],
+	  "cycle": "Perennial",
+	  "watering": "Average",
+	  "sunlight": [
+		"full sun"
+	  ],
+	  "default_image": {
+		"license": 45,
+		"license_name": "Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)",
+		"license_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+		"original_url": "https://perenual.com/storage/species_image/428_abutilon_pictum_gold_dust/og/Redvein_Abutilon.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/428_abutilon_pictum_gold_dust/regular/Redvein_Abutilon.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/428_abutilon_pictum_gold_dust/medium/Redvein_Abutilon.jpg",
+		"small_url": "https://perenual.com/storage/species_image/428_abutilon_pictum_gold_dust/small/Redvein_Abutilon.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/428_abutilon_pictum_gold_dust/thumbnail/Redvein_Abutilon.jpg"
 	  }
 	},
 	{
-	  "id": 11971,
-	  "common_name": "Milfoil",
-	  "slug": "achillea-millefolium",
-	  "scientific_name": "Achillea millefolium",
-	  "year": 1753,
-	  "bibliography": "Sp. Pl.: 899 (1753)",
-	  "author": "L.",
-	  "status": "accepted",
-	  "rank": "species",
-	  "family_common_name": "Aster family",
-	  "genus_id": 250,
-	  "image_url": "https://bs.plantnet.org/image/o/d788a757cd8bac8c3b1378a970c078a7a937a174",
-	  "synonyms": [
-		"Santolina millefolium",
-		"Achillea millefolium var. nobilior",
-		"Achillea tenuifolia",
-		"Alitubus millefolium",
-		"Achillea millefolium f. perrubriflora",
-		"Chamaemelum millefolium",
-		"Achillea tanacetifolia var. dentifera"
+	  "id": 434,
+	  "common_name": "Jacob's coat",
+	  "scientific_name": [
+		"Acalypha wilkesiana"
 	  ],
-	  "genus": "Achillea",
-	  "family": "Asteraceae",
-	  "links": {
-		"self": "/api/v1/species/achillea-millefolium",
-		"plant": "/api/v1/plants/achillea-millefolium",
-		"genus": "/api/v1/genus/achillea"
+	  "other_name": [],
+	  "cycle": "Perennial",
+	  "watering": "Frequent",
+	  "sunlight": [
+		"full sun",
+		"part shade"
+	  ],
+	  "default_image": {
+		"license": 4,
+		"license_name": "Attribution License",
+		"license_url": "https://creativecommons.org/licenses/by/2.0/",
+		"original_url": "https://perenual.com/storage/species_image/434_acalypha_wilkesiana/og/24945289366_5035e5d0a9_b.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/434_acalypha_wilkesiana/regular/24945289366_5035e5d0a9_b.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/434_acalypha_wilkesiana/medium/24945289366_5035e5d0a9_b.jpg",
+		"small_url": "https://perenual.com/storage/species_image/434_acalypha_wilkesiana/small/24945289366_5035e5d0a9_b.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/434_acalypha_wilkesiana/thumbnail/24945289366_5035e5d0a9_b.jpg"
+	  }
+	},
+	{
+	  "id": 502,
+	  "common_name": "hot water plant",
+	  "scientific_name": [
+		"Achimenes (group)"
+	  ],
+	  "other_name": [],
+	  "cycle": "Herbaceous Perennial",
+	  "watering": "Average",
+	  "sunlight": [
+		"part shade"
+	  ],
+	  "default_image": null
+	},
+	{
+	  "id": 540,
+	  "common_name": "desert rose",
+	  "scientific_name": [
+		"Adenium obesum"
+	  ],
+	  "other_name": [],
+	  "cycle": "Perennial",
+	  "watering": "Minimum",
+	  "sunlight": [
+		"full sun"
+	  ],
+	  "default_image": {
+		"license": 5,
+		"license_name": "Attribution-ShareAlike License",
+		"license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+		"original_url": "https://perenual.com/storage/species_image/540_adenium_obesum/og/9244335137_6d662ed77c_b.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/540_adenium_obesum/regular/9244335137_6d662ed77c_b.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/540_adenium_obesum/medium/9244335137_6d662ed77c_b.jpg",
+		"small_url": "https://perenual.com/storage/species_image/540_adenium_obesum/small/9244335137_6d662ed77c_b.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/540_adenium_obesum/thumbnail/9244335137_6d662ed77c_b.jpg"
+	  }
+	},
+	{
+	  "id": 543,
+	  "common_name": "maidenhair fern",
+	  "scientific_name": [
+		"Adiantum capillus-veneris"
+	  ],
+	  "other_name": [
+		"Southern Maidenhair",
+		"Venus' Hair Fern",
+		"Venus' Hair Fern"
+	  ],
+	  "cycle": "Perennial",
+	  "watering": "Average",
+	  "sunlight": [
+		"part shade",
+		"part sun/part shade"
+	  ],
+	  "default_image": {
+		"license": 4,
+		"license_name": "Attribution License",
+		"license_url": "https://creativecommons.org/licenses/by/2.0/",
+		"original_url": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/og/49636882698_cb4fa4c685_b.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/regular/49636882698_cb4fa4c685_b.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/medium/49636882698_cb4fa4c685_b.jpg",
+		"small_url": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/small/49636882698_cb4fa4c685_b.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/543_adiantum_capillus-veneris/thumbnail/49636882698_cb4fa4c685_b.jpg"
+	  }
+	},
+	{
+	  "id": 546,
+	  "common_name": "delta maidenhair fern",
+	  "scientific_name": [
+		"Adiantum raddianum"
+	  ],
+	  "other_name": [],
+	  "cycle": "Perennial",
+	  "watering": "Average",
+	  "sunlight": [
+		"part shade"
+	  ],
+	  "default_image": {
+		"license": 4,
+		"license_name": "Attribution License",
+		"license_url": "https://creativecommons.org/licenses/by/2.0/",
+		"original_url": "https://perenual.com/storage/species_image/546_adiantum_raddianum/og/48134564587_c4562175cb_b.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/546_adiantum_raddianum/regular/48134564587_c4562175cb_b.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/546_adiantum_raddianum/medium/48134564587_c4562175cb_b.jpg",
+		"small_url": "https://perenual.com/storage/species_image/546_adiantum_raddianum/small/48134564587_c4562175cb_b.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/546_adiantum_raddianum/thumbnail/48134564587_c4562175cb_b.jpg"
+	  }
+	},
+	{
+	  "id": 549,
+	  "common_name": "urn plant",
+	  "scientific_name": [
+		"Aechmea fasciata"
+	  ],
+	  "other_name": [
+		"silver vase"
+	  ],
+	  "cycle": "Perennial",
+	  "watering": "Average",
+	  "sunlight": [
+		"part sun/part shade"
+	  ],
+	  "default_image": {
+		"license": 4,
+		"license_name": "Attribution License",
+		"license_url": "https://creativecommons.org/licenses/by/2.0/",
+		"original_url": "https://perenual.com/storage/species_image/549_aechmea_fasciata/og/51446529161_03b99a881f_b.jpg",
+		"regular_url": "https://perenual.com/storage/species_image/549_aechmea_fasciata/regular/51446529161_03b99a881f_b.jpg",
+		"medium_url": "https://perenual.com/storage/species_image/549_aechmea_fasciata/medium/51446529161_03b99a881f_b.jpg",
+		"small_url": "https://perenual.com/storage/species_image/549_aechmea_fasciata/small/51446529161_03b99a881f_b.jpg",
+		"thumbnail": "https://perenual.com/storage/species_image/549_aechmea_fasciata/thumbnail/51446529161_03b99a881f_b.jpg"
 	  }
 	},
 ]

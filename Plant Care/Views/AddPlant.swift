@@ -36,28 +36,26 @@ struct AddPlant: View {
 		
 		var dateComponents = DateComponents()
 		dateComponents.calendar = Calendar.current
-//		switch(wateringFrequency) {
-//		case .Daily:
-//			//Schedule every morning at 8:30
-//			dateComponents.hour = 8
-//			dateComponents.minute = 30
-//
-//		case .Weekly:
-//			//Schedule every monday at 8:30
-//			dateComponents.weekday = 1
-//			dateComponents.hour = 8
-//			dateComponents.minute = 30
-//
-//		case.Monthly:
-//			//Schedule every 1st of month at 8:30
-//			dateComponents.day = 1
-//			dateComponents.hour = 8
-//			dateComponents.minute = 30
-//		}
+		switch(wateringFrequency) {
+		case .Daily:
+			//Schedule every morning at 8:30
+			dateComponents.hour = 8
+			dateComponents.minute = 30
+
+		case .Weekly:
+			//Schedule every monday at 8:30
+			dateComponents.weekday = 1
+			dateComponents.hour = 8
+			dateComponents.minute = 30
+
+		case.Monthly:
+			//Schedule every 1st of month at 8:30
+			dateComponents.day = 1
+			dateComponents.hour = 8
+			dateComponents.minute = 30
+		}
 		
-//		let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-		
-		let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+		let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
 		
 		let uuidString = UUID().uuidString
 		
@@ -122,7 +120,7 @@ struct AddPlant: View {
 			}.disabled(plantName.isEmpty || image == nil)
 			
 		}.sheet(isPresented: $showImagePicker, content: {
-			ImagePickerView(selectedImage: $image)
+			CameraView(selectedImage: $image)
 		})
 		.toolbar(.hidden, for: .tabBar)
 		.navigationTitle("Add a new plant")

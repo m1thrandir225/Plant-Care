@@ -9,17 +9,14 @@ import Foundation
 import Alamofire
 
 class PlantManager: ObservableObject {
-	@Published var plants: [Plant] = [];
-	
-	
+	@Published var plants: [PlantListItem] = [];
 	init () {
 		refreshPlants()
 	}
-	
-	
+
 	func refreshPlants() {
-		AF.request("http://trefle.io/api/v1/plants?token=AWONc6J5m6MjeMxsLhd19r8ympx7jJBi3t80sT7Cm3Q")
-			.responseDecodable(of: PlantResponse.self) { response in
+		AF.request("https://perenual.com/api/species-list?key=sk-zkpH6672b92769e355912&indoor=1")
+			.responseDecodable(of: MultiplePlantResponse.self) { response in
 				debugPrint(response)
 				if let plantsFromNetwork = response.value {
 					self.plants = plantsFromNetwork.data

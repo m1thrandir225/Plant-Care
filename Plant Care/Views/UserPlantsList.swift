@@ -18,7 +18,9 @@ struct UserPlantsList: View {
 		NavigationStack{
 			   List {
 				   ForEach(plants, id: \.self) { plant in
-					   UserPlantRow(plant: plant)
+					   NavigationLink(destination: UserPlantDetail(plant: plant)) {
+						   UserPlantRow(plant: plant)
+					   }
 				   }
 			   }
 

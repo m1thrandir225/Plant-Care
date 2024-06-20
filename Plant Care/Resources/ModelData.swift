@@ -7,7 +7,7 @@
 
 import Foundation
 
-var plants: [Plant] = load("plantData.json")
+var plants: [PlantListItem] = load("plantData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
 	let data: Data
