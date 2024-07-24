@@ -8,8 +8,9 @@ Plant Care lets you view the most popular indoor plants as well as add plants to
 1. Maps & Location Services -> MapView
 2. Notifications -> AddPlant view
 3. Camera -> AddPlant (while using simulator you cannot use a camera, so in the bottom sheet if you want to test out the functionality, change from CameraView to ImagePickerView)
-4. Custom Views -> Views folder
-5. API Consumation -> PlantManager, PlantDetailViewModel
-6. 3rd Party Library -> Alamofire
-7. Data Persistance -> UserPlant model using SwiftData
+4. Audio Sensor -> UserPlantDetail View
+5. Custom Views -> Views folder
+6. API Consumation -> PlantManager, PlantDetailViewModel
+7. 3rd Party Library -> Alamofire
+8. Data Persistance -> UserPlant model using SwiftData
 
