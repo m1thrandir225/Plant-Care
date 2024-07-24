@@ -31,6 +31,7 @@ enum SunlightExposure: CaseIterable, Codable {
 	var image: Data
 	var wateringFrequency: WateringFrequency
 	var sunlightExposure: SunlightExposure
+	var audioRecordings: [AudioRecording]
 	
 	
 	init(name: String, image: Data, wateringFrequency: WateringFrequency, sunlightExposure: SunlightExposure) {
@@ -38,7 +39,12 @@ enum SunlightExposure: CaseIterable, Codable {
 		self.image = image
 		self.wateringFrequency = wateringFrequency
 		self.sunlightExposure = sunlightExposure
-		
+		self.audioRecordings = []
 	}
 	
+	func removeRecording(_ recording: AudioRecording) {
+		if let index = audioRecordings.firstIndex(where: { $0.id == recording.id }) {
+			audioRecordings.remove(at: index)
+		}
+	}
 }
