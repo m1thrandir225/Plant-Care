@@ -13,6 +13,7 @@ import MapKit
 final class MapViewViewModel: ObservableObject {
 	@Published var isLoading = false
 	@Published var coordinates: CLLocationCoordinate2D? = nil
+	
 	private var locationName: String
 	
 	init(locationName: String) {
@@ -24,7 +25,9 @@ final class MapViewViewModel: ObservableObject {
 		
 		CLGeocoder().geocodeAddressString(locationName, completionHandler: {(placemarks, error) -> Void in
 			if error != nil {
+				self.isLoading = false
 				return;
+				
 			}
 			
 			if placemarks != nil {

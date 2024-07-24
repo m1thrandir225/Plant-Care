@@ -438,6 +438,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Plant-Care-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for taking pictures";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used for showing your location on the map";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio notes for your plants.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used for selecting photos from library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -469,6 +471,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Plant-Care-Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for taking pictures";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used for showing your location on the map";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone to record audio notes for your plants.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Used for selecting photos from library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

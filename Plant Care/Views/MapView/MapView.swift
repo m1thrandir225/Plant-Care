@@ -13,12 +13,21 @@ struct MapView: View {
 	var location: String
 	@ObservedObject var viewModel: MapViewViewModel
 	
+	let locationManager = CLLocationManager()
+	
+	@State private var userCamera: MapCameraPosition =
+		.userLocation(fallback: .automatic)
+	
+	@State private var showAlert = false
+	
+	
 	init(locationName: String) {
 		self.location = locationName
 		self.viewModel = MapViewViewModel(locationName: locationName)
 	}
 	
-    var body: some View {
+	
+	var body: some View {
 		ZStack {
 			if(viewModel.isLoading) {
 				ProgressView()
@@ -27,6 +36,19 @@ struct MapView: View {
 					Map(initialPosition: MapCameraPosition.region(MKCoordinateRegion(
 						center: coordinates, span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
 					)))
+				} else {
+					Map(position: $userCamera) {
+						UserAnnotation()
+					}.mapControls {
+						MapUserLocationButton()
+					}
+					.onAppear {
+						showAlert = true
+						locationManager.requestWhenInUseAuthorization()
+					}
+					.alert("Couldn't get coordinates of the current location", isPresented: $showAlert) {
+						Button("OK", role: .cancel) {}
+					}
 				}
 			}
 		}.onAppear {
@@ -39,5 +61,5 @@ struct MapView: View {
 }
 
 #Preview {
-	MapView(locationName: "Spain")
+	MapView(locationName: "")
 }
