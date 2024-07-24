@@ -102,7 +102,12 @@ struct UserPlantDetail: View {
 		}
 	}
 	
-	
+	private var dateFormatter: DateFormatter {
+		let formatter = DateFormatter()
+		formatter.dateStyle = .short
+		formatter.timeStyle = .short
+		return formatter
+	}
 	var body: some View {
 		ScrollView {
 			Image(uiImage: UIImage(data: plant.image) ?? UIImage())
@@ -132,7 +137,7 @@ struct UserPlantDetail: View {
 						.font(.headline)
 					ForEach(plant.audioRecordings) { recording in
 						HStack {
-							Text(recording.date, style: .date)
+							Text(dateFormatter.string(from: recording.date))
 							Spacer()
 							Button(action: {
 								playRecording(url: recording.url)
